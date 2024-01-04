@@ -42,7 +42,14 @@ section {
 
 #theatre {
     text-align: center; 
+    padding-bottom: 0;
 }
+
+#coding {
+    text-align: center; 
+}
+
+
 
 nav ul li {
     display: inline;
