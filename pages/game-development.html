@@ -1,62 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Game Development Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Game Development Projects</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="works-of-fiction.html">Works of Fiction</a></li>
-                <li><a href="theatre.html">Theatre</a></li>
-                <li><a href="coding.html">Coding Projects</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section>
-        <u><h2 style="text-align: center;">The Dagger of Life</h2></u>
-        <i><h3 style="text-align: center;">June 2021 - May 2022</h3></i>
-        <p> Embarking on my own solo game development project with Unreal Engine, I aimed to create a compelling narrative, which serves as the driving force for the game - complementing the gameplay and the world of The Dagger of Life. The ending portrays the blurred lines between good and evil, and how everyone - no matter how dastardly their acts are- believes that they are justified. And not every story has a happy ending...</p>
-            <ul> 
-                <li>Isaac (controlled by the player) is instructed by his leader, Agartha, to retrieve the Crimson dagger which could save the world from complete obliteration. </li>
-                <li> Isaac has to vanquish myriad enemies on his quest - including gigantic spiders, enemy soldiers, and trolls. </li>
-                <li> Agartha leads Isaac to believe that by acquiring the dagger he will become the hero who gives joy and peace to a desolate world. </li>
-                <li> However, a twist towards the end reveals that Agartha wished to use the dagger to destroy the world and thus "cleanse it" of pain and suffering. The "Dagger of Life" became the "Dagger of Death". </li>
-                <li> Upon finding out Agartha's true intentions, Isaac tries to stop Agartha from going through with her vile plan, but he is no match for her magical powers and succumbs to his death. </li>
-                <li> Isaac, who thought he was the saviour of the world, unintentionally brought about its doom. </li>
-            </ul>   
-        <div class = "center">
-            <iframe src="https://drive.google.com/file/d/1FrLoKbC6MuPy-TusXsTW5YkyqdfiYTON/preview" width="640" height="360" allow="autoplay"></iframe>
+<body style="font-family: 'Libre Baskerville', serif;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#">Game Development Projects</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="works-of-fiction.html">Works of Fiction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="theatre.html">Theatre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="coding.html">Coding Projects</a></li>
+                </ul>
+            </div>
         </div>
-    </section>
-   
+    </nav>
 
-    <section>
-        <u><h2 style="text-align: center;">Anarchy Games</h2></u>
-        <i><h3 style="text-align: center;">June 2023 - July 2023</h3></i>
-        <p> I collaborated with a team of experienced developers and artists to create a third-person battle-royale mobile game called Anarchy. </p>
-            <ul> 
-                <li>I worked with Unreal Engine 5, using C++ along with UE5's Blueprint scripting system </li>
-                <li>I Implemented gameplay mechanics and functionality such as object trajectories, raycasting, and other advanced character movement and animation components </li>
-                <li>I incorporated UI elements to facilitate the player experience, such as different game and menu screens, sprint locking, and interpolated camera movements for a cinematic effect </li>
-                <li>I experimented with landscape sculpting, height maps, and procedural generation to create a sprawling open world</li>
-                <li>I also worked with version control via git, and carried out comprehensive code documentation. </li>
-            </ul>   
-        <div class = "center">
-            <iframe src="https://drive.google.com/file/d/1yJQEP22ny-BGrN1RGOZdUIb5SwH_ECQA/preview" width="640" height="300" allow="autoplay"></iframe>
+    <main class="container">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+                <section class="mb-5">
+                    <h2 class="mb-3 text-center">The Dagger of Life</h2>
+                    <h4 class="mb-2 text-center text-muted">June 2021 - May 2022</h4>
+                    <p>Embarking on my own solo game development project with Unreal Engine, I aimed to create a compelling narrative, which serves as the driving force for the game - complementing the gameplay and the world of The Dagger of Life. The ending portrays the blurred lines between good and evil, and how everyone - no matter how dastardly their acts are- believes that they are justified. And not every story has a happy ending...</p>
+                    <ul>
+                        <li>Isaac (controlled by the player) is instructed by his leader, Agartha, to retrieve the Crimson dagger which could save the world from complete obliteration.</li>
+                        <li>Isaac has to vanquish myriad enemies on his quest - including gigantic spiders, enemy soldiers, and trolls.</li>
+                        <li>Agartha leads Isaac to believe that by acquiring the dagger he will become the hero who gives joy and peace to a desolate world.</li>
+                        <li>However, a twist towards the end reveals that Agartha wished to use the dagger to destroy the world and thus "cleanse it" of pain and suffering. The "Dagger of Life" became the "Dagger of Death".</li>
+                        <li>Upon finding out Agartha's true intentions, Isaac tries to stop Agartha from going through with her vile plan, but he is no match for her magical powers and succumbs to his death.</li>
+                        <li>Isaac, who thought he was the saviour of the world, unintentionally brought about its doom.</li>
+                    </ul>
+                    <div class="text-center">
+                        <iframe src="https://drive.google.com/file/d/1FrLoKbC6MuPy-TusXsTW5YkyqdfiYTON/preview" width="640" height="360" allow="autoplay"></iframe>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="mb-3 text-center">Anarchy Games</h2>
+                    <h4 class="mb-2 text-center text-muted">June 2023 - July 2023</h4>
+                    <p>I collaborated with a team of experienced developers and artists to create a third-person battle-royale mobile game called Anarchy.</p>
+                    <ul>
+                        <li>I worked with Unreal Engine 5, using C++ along with UE5's Blueprint scripting system</li>
+                        <li>I Implemented gameplay mechanics and functionality such as object trajectories, raycasting, and other advanced character movement and animation components</li>
+                        <li>I incorporated UI elements to facilitate the player experience, such as different game and menu screens, sprint locking, and interpolated camera movements for a cinematic effect</li>
+                        <li>I experimented with landscape sculpting, height maps, and procedural generation to create a sprawling open world</li>
+                        <li>I also worked with version control via git, and carried out comprehensive code documentation.</li>
+                    </ul>
+                    <div class="text-center">
+                        <iframe src="https://drive.google.com/file/d/1yJQEP22ny-BGrN1RGOZdUIb5SwH_ECQA/preview" width="640" height="300" allow="autoplay"></iframe>
+                    </div>
+                </section>
+            </div>
         </div>
+    </main>
 
-    </section>
-
-    <footer>
-        <p>© 2024 Your Name</p>
+    <footer class="bg-dark text-light text-center py-3 mt-4">
+        <div class="container">
+            <p class="mb-0">© 2025 ARD</p>
+        </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
