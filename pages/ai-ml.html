@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI/ML Projects</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <style>
+        /* Light page-specific styling (keeps your existing style.css intact) */
+        .project-header { text-align: center; }
+        .project-subheader { text-align: center; margin-top: -8px; }
+
+        .project-media {
+            max-width: 950px;
+            margin: 18px auto 0 auto;
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 18px;
+            align-items: start;
+        }
+
+        .logo-box {
+            width: 220px;
+            min-height: 140px;
+            border: 2px dashed rgba(0,0,0,0.25);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .logo-box img {
+            max-width: 100%;
+            max-height: 140px;
+            object-fit: contain;
+        }
+
+        .video-embed {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: 0;
+            border-radius: 10px;
+        }
+
+        .center { text-align: center; }
+
+        /* Responsive: stack logo over video */
+        @media (max-width: 820px) {
+            .project-media { grid-template-columns: 1fr; }
+            .logo-box { width: 100%; }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>AI/ML Projects</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="research.html">Research Projects</a></li>
+                <li><a href="game-development.html">Game Development Projects</a></li>
+                <li><a href="coding.html">Coding Projects</a></li>
+                <li><a href="works-of-fiction.html">Works of Fiction</a></li>
+                <li><a href="theatre.html">Theatre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+    <u><h2 style="text-align: center;">ClariCare+</h2></u>
+    <i><h3 style="text-align: center;">AI-Powered Health Understanding and Remote Patient Monitoring</h3></i>
+
+     <div class="center">
+        <img src="../pages/Coding/cc_logo.png" alt="ClariCare+ Logo" style="max-width: 250px;">
+    </div>
+
+    <p>
+        ClariCare+ is an AI-driven healthcare platform designed to bridge gaps in health literacy and
+        remote patient monitoring by transforming complex medical information into accessible,
+        actionable insights for both patients and clinicians. The system emphasizes longitudinal
+        understanding of patient health rather than isolated measurements, with the goal of improving
+        patient comprehension, reducing preventable readmissions, and supporting informed clinical
+        decision-making.
+    </p>
+
+    <ul>
+        <li>
+            The platform addresses widespread challenges in health literacy by translating
+            clinician-provided medical instructions and terminology into clear, plain-language explanations
+            that are personalized using a patient’s historical health data.
+        </li>
+        <li>
+            ClariCare+ integrates physiological data from consumer-grade wearable devices, including
+            Apple Watch and Samsung Health, enabling continuous monitoring and trend-based analysis
+            of vital signs over time.
+        </li>
+        <li>
+            A dual-dashboard architecture separates patient-facing and clinician-facing views, allowing
+            patients to receive simplified summaries while clinicians access baseline-aware interpretations,
+            deviation detection, and contextual alerts.
+        </li>
+        <li>
+            AI-based summarization and trend interpretation models are used to identify abnormal patterns
+            relative to individual patient baselines, rather than relying on static population-wide
+            thresholds.
+        </li>
+        
+    </ul>
+
+
+
+    <p>A quick demo video of the platform in action is shown below.</p>
+    <div class="center">
+        <br>
+        <p><b>Demo Video</b></p>
+        <iframe
+            src="https://drive.google.com/file/d/119LVX5oTYyoiHuRnLR6FDdbyUVb-9eSK/preview"
+            width="640"
+            height="360"
+            allow="autoplay"
+            allowfullscreen>
+        </iframe>
+    </div>
+</section>
+<section>
+    <u><h2 style="text-align: center;">Adversarial Transfer Learning Toolkit</h2></u>
+    <i><h3 style="text-align: center;">Practical Robustness Evaluation for Vision Models</h3></i>
+
+    <p>
+        This project presents a lightweight adversarial robustness evaluation toolkit designed
+        for realistic black-box machine learning scenarios. A Streamlit-based interface enables users to upload models and datasets, visualize adversarial
+            examples alongside clean inputs, and export evaluation results for further analysis. The toolkit can be viewed <b><a href="https://adv-toolkit.streamlit.app" target="_blank">here</a></b>.
+        </li>
+    </p>
+
+    <ul>
+        <li>
+            The toolkit emphasizes zero-query, transfer-based adversarial attacks, enabling robustness
+            evaluation when only surrogate models or pretrained architectures are available.
+        </li>
+        <li>
+            It includes an implementation of the Sine Attack, a frequency-domain adversarial method
+            that parameterizes perturbations using low-dimensional sinusoidal functions, exploiting
+            structured vulnerabilities in convolutional neural networks.
+        </li>
+        <li>
+            A cross-domain adversarial generation pipeline allows perturbations trained on one dataset
+            or model family to transfer effectively to unseen architectures and domains.
+        </li>
+        <li>
+            The system reports comprehensive evaluation metrics, including attack success rates,
+            accuracy degradation, perturbation norm statistics, and perceptual similarity measures.
+        </li>
+        
+    </ul>
+
+    <p>A quick demo video of the toolkit in action is shown below.</p>
+
+    <div class="center">
+        <br>
+        <p><b>Demo Video</b></p>
+        <iframe
+            src="https://drive.google.com/file/d/1dqIUy3TnNPmntp3I3ajhd39xbsynokiC/preview"
+            width="640"
+            height="360"
+            allow="autoplay"
+            allowfullscreen>
+        </iframe>
+    </div>
+    <!-- <div class="center">
+        View the toolkit <a href="https://adv-toolkit.streamlit.app" target="_blank">here</a>.
+    </div> -->
+</section>
+</body>
+</html>
